@@ -1,0 +1,10 @@
+name: CI
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: github-prod
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run a one-line script
+        run: chmod 755 ansible_install.sh;sh ansible_install.sh
