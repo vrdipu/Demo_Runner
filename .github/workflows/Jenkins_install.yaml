@@ -1,4 +1,4 @@
-name: Ansible_Install
+name: Jenkins_Install
 on:
   workflow_dispatch:
 jobs:
