@@ -7,4 +7,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Run a one-line script
-        run: chmod 755 ansible_install.sh;sh ansible_install.sh
+        run: |
+          sudo apt-get update
+          sudo apt-add-repository ppa:ansible/ansible
+          sudo apt-get update 
+           sudo apt-get install ansible -y 
